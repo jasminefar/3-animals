@@ -1,0 +1,209 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    margin: 0;
+}
+
+.scene {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.koala, .rabbit, .tiger {
+    position: relative;
+    width: 200px;
+    height: 400px;
+}
+
+.koala .head, .rabbit .head, .tiger .head {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #B0B0B0;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.koala .ear, .rabbit .ear, .tiger .ear {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #B0B0B0;
+    border-radius: 50%;
+}
+
+.koala .ear.left, .rabbit .ear.left, .tiger .ear.left {
+    left: -20px;
+    top: 20px;
+}
+
+.koala .ear.right, .rabbit .ear.right, .tiger .ear.right {
+    right: -20px;
+    top: 20px;
+}
+
+.koala .eye, .rabbit .eye, .tiger .eye {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.koala .eye.left, .rabbit .eye.left, .tiger .eye.left {
+    left: 20px;
+    top: 40px;
+}
+
+.koala .eye.right, .rabbit .eye.right, .tiger .eye.right {
+    right: 20px;
+    top: 40px;
+}
+
+.koala .pupil, .rabbit .pupil, .tiger .pupil {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.koala .nose, .rabbit .nose, .tiger .nose {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 70px;
+    left: 42.5px;
+}
+
+.koala .mouth, .rabbit .mouth, .tiger .mouth {
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 0 0 15px 15px;
+    top: 90px;
+    left: 35px;
+}
+
+.koala .body, .rabbit .body, .tiger .body {
+    position: relative;
+    width: 140px;
+    height: 200px;
+    background-color: #B0B0B0;
+    border-radius: 50% 50% 40% 40%;
+    margin: 20px auto 0 auto;
+}
+
+.koala .arm, .rabbit .arm, .tiger .arm {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background-color: #B0B0B0;
+    border-radius: 20px;
+}
+
+.koala .arm.left, .rabbit .arm.left, .tiger .arm.left {
+    left: -10px;
+    top: 30px;
+}
+
+.koala .arm.right, .rabbit .arm.right, .tiger .arm.right {
+    right: -10px;
+    top: 30px;
+}
+
+.koala .leg, .rabbit .leg, .tiger .leg {
+    position: absolute;
+    width: 30px;
+    height: 100px;
+    background-color: #B0B0B0;
+    border-radius: 20px;
+    bottom: -10px;
+}
+
+.koala .leg.left, .rabbit .leg.left, .tiger .leg.left {
+    left: 20px;
+}
+
+.koala .leg.right, .rabbit .leg.right, .tiger .leg.right {
+    right: 20px;
+}
+
+.tiger .body {
+    background-color: #FFA500;
+}
+
+.tiger .stripe {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: #000;
+}
+
+.tiger .stripe1 {
+    top: 30px;
+    left: 20px;
+    transform: rotate(45deg);
+}
+
+.tiger .stripe2 {
+    top: 60px;
+    left: 50px;
+    transform: rotate(-45deg);
+}
+
+.tiger .stripe3 {
+    top: 90px;
+    right: 20px;
+    transform: rotate(45deg);
+}
+
+.tiger .stripe4 {
+    top: 120px;
+    right: 50px;
+    transform: rotate(-45deg);
+}
+
+.rabbit .head {
+    background-color: #FFF;
+}
+
+.rabbit .ear {
+    background-color: #FFF;
+    height: 70px;
+}
+
+.rabbit .eye {
+    background-color: #000;
+}
+
+.rabbit .pupil {
+    display: none;
+}
+
+.rabbit .nose {
+    width: 10px;
+    height: 10px;
+}
+
+.rabbit .mouth {
+    width: 20px;
+    height: 10px;
+    top: 85px;
+    left: 40px;
+    border-radius: 0 0 10px 10px;
+}
+
+.rabbit .body {
+    background-color: #FFF;
+}
